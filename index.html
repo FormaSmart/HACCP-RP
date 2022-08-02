@@ -26,6 +26,8 @@
 
     <link rel="stylesheet" type="text/css" href="assets/css/lightbox.css">
 
+    <link rel="stylesheet" type="text/css" href="assets/css/cookie.css">
+
     </head>
     
     <body>
@@ -589,7 +591,39 @@
     <script src="assets/js/imgfix.min.js"></script> 
     <script src="assets/js/slick.js"></script> 
     <script src="assets/js/lightbox.js"></script> 
-    <script src="assets/js/isotope.js"></script> 
+    <script src="assets/js/isotope.js"></script>
+    <script src="assets/js/glowCookies.js"></script>
+
+    <!-- Cookie -->
+    <script src="https://cdn.jsdelivr.net/gh/manucaralmo/GlowCookies@3.1.7/src/glowCookies.min.js"></script>
+    <script>
+        glowCookies.start('fr', {
+            style: 2,
+            analytics: 'G-FH87DE17XF',
+            facebookPixel: '990955817632355',
+            hideAfterClick: true,
+            border: 'none',
+            position: 'right',
+            policyLink: 'https://www.cnil.fr/fr/cookies-et-autres-traceurs/regles/cookies/que-dit-la-loi',
+            customScript: [{ type: 'custom', position: 'body', content: `console.log('my custom js');` }],
+            bannerDescription: 'Nous utilisons des cookies pour analyser vos préférences en ligne &amp; personnaliser le contenu de l\'annonce.\n' +
+                'Vous acceptez notre ',
+            bannerLinkText: 'Cookie.',
+            bannerBackground: '#fffbfb',
+            bannerColor: '#000000',
+            bannerHeading: '<h2>Ce site web utilise des cookies</h2>',
+            acceptBtnText: 'Accepter',
+            acceptBtnColor: 'White',
+            acceptBtnBackground: 'Red',
+            rejectBtnText: 'Refuser',
+            rejectBtnBackground: 'SmokeWhite',
+            rejectBtnColor: 'black',
+            manageColor: 'white',
+            manageBackground: 'blue',
+            manageText: 'cookies text'
+        });
+    </script>
+    <!-- Cookie End -->
     
     <!-- Global Init -->
     <script src="assets/js/custom.js"></script>
